@@ -9,9 +9,6 @@
   font-weight: 300;
 }
 
-body {
-  /* max-width: 1150px; */
-}
 .Portfolio {
   margin: 0 auto;
   padding: 80px 0 128px 80px;
@@ -53,11 +50,15 @@ body {
   flex-direction: column;
   text-decoration: none;
   font-size: 12px;
+  align-items: center;
 }
 
 .Portfolio__Links-list li a img {
   height: 40px;
   margin-bottom: 8px;
+}
+.Portfolio__Links-list li a img:hover {
+  height: 48px;
 }
 
 .Portfolio__Description {
@@ -74,7 +75,7 @@ body {
 }
 .Portfolio__Tools-Box {
   padding: 32px;
-  border-radius: 8px;
+  border-radius: 8px 0 0 8px;
   background-color: #fb4f14;
 }
 
@@ -89,4 +90,53 @@ body {
   font-size: 36px;
   text-transform: capitalize;
   color: #002244;
+}
+
+@media (max-width: 800px) {
+  .Portfolio {
+    padding: 80px 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: "info" "description" "tools" "links";
+    justify-items: center;
+    grid-row-gap: initial;
+  }
+  .Portfolio__Description {
+    padding: 0 80px;
+  }
+  .Portfolio__Tools {
+    width: 100%;
+    margin-bottom: 64px;
+  }
+  .Portfolio__Tools-Box {
+    border-radius: 0;
+  }
+  .Portfolio__Tools h4 {
+    font-size: 24px;
+  }
+
+  .Portfolio__Tools span {
+    margin-top: 16px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Portfolio__Description {
+    padding: 0 48px;
+  }
+  .Portfolio__Description p {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .Portfolio__Tools {
+    margin-bottom: 48px;
+  }
+  .Portfolio__Tools h4 {
+    font-size: 16px;
+  }
+
+  .Portfolio__Tools span {
+    margin-top: 16px;
+    font-size: 20px;
+  }
 }
