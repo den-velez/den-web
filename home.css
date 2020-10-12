@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+body {
+  /* max-width: 1150px; */
+}
+.Portfolio {
+  margin: 0 auto;
+  padding: 80px 0 128px 80px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "info description" "links tools";
+  background-color: #002244;
+  grid-row-gap: 48px;
+}
+.Portfolio__Info {
+  grid-area: info;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Portfolio__Info figure img {
+  object-fit: contain;
+  max-width: 180px;
+  border-radius: 32px;
+}
+
+.Portfolio__Links {
+  grid-area: links;
+  max-width: 350px;
+}
+.Portfolio__Links-list {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: center;
+}
+
+.Portfolio__Links-list li a {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.Portfolio__Links-list li a img {
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.Portfolio__Description {
+  max-width: 800px;
+  grid-area: description;
+  font-size: 24px;
+}
+.Portfolio__Description p {
+  margin-bottom: 32px;
+  font-size: 24px;
+}
+.Portfolio__Tools {
+  grid-area: tools;
+}
+.Portfolio__Tools-Box {
+  padding: 32px;
+  border-radius: 8px;
+  background-color: #fb4f14;
+}
+
+.Portfolio__Tools h4 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #002244;
+}
+
+.Portfolio__Tools span {
+  margin-top: 16px;
+  font-size: 36px;
+  text-transform: capitalize;
+  color: #002244;
+}
