@@ -1,26 +1,13 @@
 import Image from "next/image";
+import { Header, Hero } from "@components";
 
 export default function Page() {
   return (
     <>
-      <header className='w-[100vw] h-[60px] bg-orange'>
-        <ul className='h-full flex justify-end items-center'>
-          <li>
-            <a href='#about'>About</a>
-          </li>
-          <li>
-            <a href='#experience'>Experience</a>
-          </li>
-          <li>
-            <a href='#projects'>Projects</a>
-          </li>
-          <li>
-            <a href='#hobbies'>Hobbies</a>
-          </li>
-        </ul>
-      </header>
-      <main className='w-[100vw] min-h-[100vh] bg-background text-orange'>
-        <div className='mx-auto'>
+      <Header />
+      <main className='w-[100vw] min-h-[100vh] bg-blueBrand text-orangeBrand'>
+        <Hero />
+        {/* <div className='mx-auto'>
           <Image
             className='rounded-[30px]'
             src={"/images/den-velez.jpg"}
@@ -40,7 +27,7 @@ export default function Page() {
         <h3 id='hobbies'>Hobbies</h3>
         <p className='h-[400px]'></p>
         <h3 id='letsWork'>Let's work together</h3>
-        <p className='h-[400px]'></p>
+        <p className='h-[400px]'></p> */}
       </main>
     </>
   );

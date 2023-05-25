@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'orange': '#f67b50',
-        'background': '#002244',
+        'orangeBrand': '#F64D18',
+        'blueBrand': '#002244',
+        'grayBrand':'#A3A9BD',
       },
+      backgroundImage: {
+        'hero': "url('/backgrounds/bg-hero.svg')",
+      }
     },
   },
   plugins: [],
