@@ -1,4 +1,4 @@
-import { Header, Hero, StackTech, Sections } from "@components";
+import { Footer, Header, Hero, StackTech, Sections } from "@components";
 import { SectionsComponentsProps } from "@models/Sections";
 
 export default function Page() {
@@ -58,7 +58,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <main className='w-[100vw] min-h-[100vh] bg-blueBrand'>
+      <main className='flex flex-col w-[100vw] min-h-[100vh] bg-blueBrand'>
         <Hero />
         <Sections {...aboutData} />
         <Sections {...experienceData} />
@@ -67,6 +67,7 @@ export default function Page() {
         <p className='py-40 text-[64px] text-grayBrand text-center'>
           LETS WORK TOGETHER !
         </p>
+        <Footer />
       </main>
     </>
   );
