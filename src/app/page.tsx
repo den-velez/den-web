@@ -1,4 +1,4 @@
-import { Header, Hero, Sections } from "@components";
+import { Header, Hero, StackTech, Sections } from "@components";
 import { SectionsComponentsProps } from "@models/Sections";
 
 export default function Page() {
@@ -63,6 +63,10 @@ export default function Page() {
         <Sections {...aboutData} />
         <Sections {...experienceData} />
         <Sections {...projectsData} />
+        <StackTech />
+        <p className='py-40 text-[64px] text-grayBrand text-center'>
+          LETS WORK TOGETHER !
+        </p>
       </main>
     </>
   );
