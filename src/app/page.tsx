@@ -58,13 +58,13 @@ export default function Page() {
   return (
     <>
       <Header />
-      <main className='flex flex-col w-[100vw] min-h-[100vh] bg-blueBrand'>
+      <main className='w-[100vw] min-h-[100vh] bg-blueBrand'>
         <Hero />
         <Sections {...aboutData} />
         <Sections {...experienceData} />
         <Sections {...projectsData} />
         <StackTech />
-        <p className='py-40 text-[64px] text-grayBrand text-center'>
+        <p className='py-24 md:py-40 text-[32px] md:text-[64px] text-grayBrand text-center'>
           LETS WORK TOGETHER !
         </p>
         <Footer />
