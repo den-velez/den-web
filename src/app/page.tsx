@@ -26,7 +26,7 @@ export default function Page() {
         items: [
           "Web UI developer at globant",
           "Software Developer (Self-employee)",
-          "Firebase  Developer (Self-employee)",
+          "FileMaker Developer (Self-employee)",
           "Inventory Logistics Manager at Famsa Moda y Calzado",
           "Inventory Logistics Supervisor at Famsa Moda y Calzado",
           "Process Supervisor at Famsa Moda y Calzado",
@@ -64,7 +64,7 @@ export default function Page() {
       <main className='w-[100vw] min-h-[100vh] bg-blueBrand'>
         <Hero />
         <Sections {...aboutData} />
-        <Sections id='experience' {...experienceData} />
+        <Sections {...experienceData} />
         <Sections {...projectsData} />
         <StackTech />
         <p className='py-24 md:py-40 text-[32px] md:text-[64px] text-grayBrand text-center'>

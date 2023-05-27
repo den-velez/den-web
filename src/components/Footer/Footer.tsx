@@ -16,7 +16,7 @@ const Footer = () => {
   }: AnchorComponentWithLogoProps) => (
     <Link href={socialMediaLink} target='_blank'>
       <Image
-        className='w-[90%]'
+        className='w-[90%] md:w-[50px]'
         src={socialMediaLogoPath}
         alt={socialMediaName}
         width={50}
@@ -44,18 +44,22 @@ const Footer = () => {
   ];
 
   return (
-    <footer className='fixed bottom-0 inset-x-0 md:static flex flex-col justify-between h-16 md:h-[230px] bg-lightBlue'>
-      <div className='w-full md:w-[360px] md:pl-24 md:pt-5'>
-        <h2 className='hidden md:block text-grayBrand'>CONNECT US</h2>
-        <ul className='md:mt-10 flex w-full justify-around items-center'>
-          {socialMediaInfo.map((socialMediaItem) => (
-            <li>
-              <AnchorComponentWithLogo {...socialMediaItem} />
-            </li>
-          ))}
-        </ul>
+    <footer className='fixed bottom-0 inset-x-0 md:static h-16 md:h-[230px] flex flex-col justify-between bg-lightBlue'>
+      <div className='md:max-w-[1240px] mx-auto w-full h-full'>
+        <div className='w-full h-full md:h-auto md:w-[280px] md:pt-5'>
+          <h2 className='hidden md:block text-grayBrand text-center'>
+            CONNECT US
+          </h2>
+          <ul className='md:mt-8 h-full flex w-full justify-around items-center'>
+            {socialMediaInfo.map((socialMediaItem) => (
+              <li>
+                <AnchorComponentWithLogo {...socialMediaItem} />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className='hidden md:flex justify-center'>
+      <div className='hidden w-full md:flex justify-center'>
         <Image
           src={"svgs/designer.svg"}
           height={27}

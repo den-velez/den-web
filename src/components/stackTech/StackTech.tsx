@@ -1,21 +1,25 @@
 import Image from "next/image";
+import { FaAngular, FaReact, FaNodeJs } from "react-icons/fa";
+import { SiTypescript, SiJest } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 
 const StackTech = () => {
   const stackUrlLogos = [
-    "svgs/github.svg",
-    "svgs/github.svg",
-    "svgs/github.svg",
-    "svgs/github.svg",
-    "svgs/github.svg",
-    "svgs/github.svg",
-    "svgs/github.svg",
-    "svgs/github.svg",
+    <FaAngular className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
+    <FaReact className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
+    <TbBrandNextjs className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
+    <IoLogoJavascript className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
+    <SiTypescript className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
+    <SiJest className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
+    <FaNodeJs className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
+    <IoLogoFirebase className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
   ];
 
   const StackLogoComponent = ({ technology }) => {
     return (
-      <div className='flex justify-center items-centet bg-icons bg-cover w-[80px] h-[75px] md:w-[160px] md:h-[150px]'>
-        <Image src={technology} alt='tech logo' width={120} height={120} />
+      <div className='flex justify-center items-center bg-icons bg-cover w-[80px] h-[75px] md:w-[160px] md:h-[150px]'>
+        {technology}
       </div>
     );
   };

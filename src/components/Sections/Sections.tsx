@@ -57,7 +57,7 @@ const Sections = (props: SectionsComponentsProps) => {
     paragraphList: string[];
   }) => {
     return (
-      <div className='px-3 md:px-14 max-w-[800px] text-whiteBrand'>
+      <div className='px-8 md:px-14 max-w-[800px] text-whiteBrand'>
         {paragraphList.map((paragraph, key) => (
           <p className='mt-10' key={key}>
             {paragraph}
@@ -72,7 +72,7 @@ const Sections = (props: SectionsComponentsProps) => {
       <span className='mr-5 min-w-[16px] md:mr-10 w-4 h-4 rounded-[8px] md:min-w-[28px] md:w-7 md:h-7 md:rounded-[14px] bg-blueShape '></span>
     );
     return (
-      <div className='mt-8 md:mt-0 flex px-14 max-w-[600px] text-whiteBrand'>
+      <div className='mt-8 md:mt-0 flex px-12 max-w-[500px] md:max-w-[600px] text-whiteBrand'>
         {!bullets && (
           <div className='min-h-full w-2 bg-blueShape mr-10 rounded-[20px]'></div>
         )}
