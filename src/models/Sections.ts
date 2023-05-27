@@ -3,6 +3,7 @@ type imagePositionType = "left" | "right";
 
 export interface SectionsComponentsProps {
   title: string;
+  id: string;
   imageUrl: string;
   imagePosition: imagePositionType;
   imageShape: imageShapeType;

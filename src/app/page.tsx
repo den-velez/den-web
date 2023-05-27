@@ -4,6 +4,7 @@ import { SectionsComponentsProps } from "@models/Sections";
 export default function Page() {
   const aboutData: SectionsComponentsProps = {
     title: "About me",
+    id: "about",
     imageUrl: "/images/den-velez.png",
     imagePosition: "left",
     imageShape: "rectagule",
@@ -15,7 +16,8 @@ export default function Page() {
   };
 
   const experienceData: SectionsComponentsProps = {
-    title: "Experience",
+    title: "experience",
+    id: "experience",
     imageUrl: "/images/experience.png",
     imagePosition: "right",
     imageShape: "square",
@@ -35,7 +37,8 @@ export default function Page() {
   };
 
   const projectsData: SectionsComponentsProps = {
-    title: "Projects",
+    title: "projects",
+    id: "projects",
     imageUrl: "/images/experience.png",
     imagePosition: "left",
     imageShape: "square",
@@ -61,7 +64,7 @@ export default function Page() {
       <main className='w-[100vw] min-h-[100vh] bg-blueBrand'>
         <Hero />
         <Sections {...aboutData} />
-        <Sections {...experienceData} />
+        <Sections id='experience' {...experienceData} />
         <Sections {...projectsData} />
         <StackTech />
         <p className='py-24 md:py-40 text-[32px] md:text-[64px] text-grayBrand text-center'>

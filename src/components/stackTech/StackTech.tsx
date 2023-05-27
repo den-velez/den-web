@@ -21,10 +21,16 @@ const StackTech = () => {
   };
 
   return (
-    <section className='max-w-[1240px] mx-auto grid  grid-cols-2 md:grid-cols-4 gap-y-14 md:gap-y-28 justify-items-center'>
-      {stackUrlLogos.map((technology, key) => {
-        return <StackLogoComponent key={key} technology={technology} />;
-      })}
+    <section id='stack' className='max-w-[1240px] mx-auto'>
+      <h1
+        className={`ml-0 py-14 md:py-36 text-orangeBrand uppercase font-bold text-center`}>
+        My Stack
+      </h1>
+      <div className='grid grid-cols-2 md:grid-cols-4 gap-y-14 md:gap-y-28 justify-items-center'>
+        {stackUrlLogos.map((technology, key) => {
+          return <StackLogoComponent key={key} technology={technology} />;
+        })}
+      </div>
     </section>
   );
 };

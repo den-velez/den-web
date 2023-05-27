@@ -8,6 +8,7 @@ import {
 const Sections = (props: SectionsComponentsProps) => {
   const {
     title,
+    id,
     imageUrl,
     imagePosition,
     imageShape,
@@ -71,7 +72,7 @@ const Sections = (props: SectionsComponentsProps) => {
       <span className='mr-5 min-w-[16px] md:mr-10 w-4 h-4 rounded-[8px] md:min-w-[28px] md:w-7 md:h-7 md:rounded-[14px] bg-blueShape '></span>
     );
     return (
-      <div className='flex px-14 max-w-[600px] text-whiteBrand'>
+      <div className='mt-8 md:mt-0 flex px-14 max-w-[600px] text-whiteBrand'>
         {!bullets && (
           <div className='min-h-full w-2 bg-blueShape mr-10 rounded-[20px]'></div>
         )}
@@ -100,7 +101,9 @@ const Sections = (props: SectionsComponentsProps) => {
   };
 
   return (
-    <section className='pb-14 md:pb-64 flex flex-col border-t-2 border-orangeBrand'>
+    <section
+      id={id}
+      className='pb-14 md:pb-64 flex flex-col border-t-2 border-orangeBrand'>
       <div className={`flex flex-col mx-auto items-center ${classImgPosition}`}>
         <h1
           className={`ml-0 py-14 md:py-36 text-orangeBrand uppercase font-bold text-center ${classTitlePosition}`}>

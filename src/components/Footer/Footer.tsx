@@ -44,7 +44,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className='fixed bottom-0 inset-x-0 flex items-center h-16 md:h-[230px] bg-lightBlue'>
+    <footer className='fixed bottom-0 inset-x-0 md:static flex items-center h-16 md:h-[230px] bg-lightBlue'>
       <div className='w-full md:w-[360px] md:pl-24'>
         <h2 className='hidden md:block text-grayBrand'>CONNECT US</h2>
         <ul className='md:mt-10 flex w-full justify-around items-center'>
