@@ -44,8 +44,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className='fixed bottom-0 inset-x-0 md:static flex items-center h-16 md:h-[230px] bg-lightBlue'>
-      <div className='w-full md:w-[360px] md:pl-24'>
+    <footer className='fixed bottom-0 inset-x-0 md:static flex flex-col justify-between h-16 md:h-[230px] bg-lightBlue'>
+      <div className='w-full md:w-[360px] md:pl-24 md:pt-5'>
         <h2 className='hidden md:block text-grayBrand'>CONNECT US</h2>
         <ul className='md:mt-10 flex w-full justify-around items-center'>
           {socialMediaInfo.map((socialMediaItem) => (
@@ -54,6 +54,14 @@ const Footer = () => {
             </li>
           ))}
         </ul>
+      </div>
+      <div className='hidden md:flex justify-center'>
+        <Image
+          src={"svgs/designer.svg"}
+          height={27}
+          width={219}
+          alt='design by Andrea Bustelo'
+        />
       </div>
     </footer>
   );
