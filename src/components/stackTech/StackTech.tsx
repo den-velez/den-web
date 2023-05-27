@@ -6,14 +6,54 @@ import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 
 const StackTech = () => {
   const stackUrlLogos = [
-    <FaAngular className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
-    <FaReact className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
-    <TbBrandNextjs className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
-    <IoLogoJavascript className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
-    <SiTypescript className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
-    <SiJest className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
-    <FaNodeJs className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
-    <IoLogoFirebase className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />,
+    {
+      name: "Angularjs",
+      icon: (
+        <FaAngular className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />
+      ),
+    },
+    {
+      name: "Reactjs",
+      icon: (
+        <FaReact className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />
+      ),
+    },
+    {
+      name: "Nextjs",
+      icon: (
+        <TbBrandNextjs className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />
+      ),
+    },
+    {
+      name: "Javascript",
+      icon: (
+        <IoLogoJavascript className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />
+      ),
+    },
+    {
+      name: "Typescript",
+      icon: (
+        <SiTypescript className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />
+      ),
+    },
+    {
+      name: "Jest",
+      icon: (
+        <SiJest className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />
+      ),
+    },
+    {
+      name: "Nodejs",
+      icon: (
+        <FaNodeJs className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />
+      ),
+    },
+    {
+      name: "Firebase",
+      icon: (
+        <IoLogoFirebase className='text-whiteBrand h-[55px] w-[60px] md:h-[112px] md:w-[120px]' />
+      ),
+    },
   ];
 
   const StackLogoComponent = ({ technology }) => {
@@ -32,7 +72,14 @@ const StackTech = () => {
       </h1>
       <div className='grid grid-cols-2 md:grid-cols-4 gap-y-14 md:gap-y-28 justify-items-center'>
         {stackUrlLogos.map((technology, key) => {
-          return <StackLogoComponent key={key} technology={technology} />;
+          return (
+            <div key={key}>
+              <StackLogoComponent technology={technology.icon} />
+              <p className='mt-4 -w-full text-whiteBrand text-center'>
+                {technology.name}
+              </p>
+            </div>
+          );
         })}
       </div>
     </section>
