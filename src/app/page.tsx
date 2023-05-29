@@ -51,7 +51,7 @@ export default function Page() {
       {
         title: "Filemaker",
         items: [
-          "Dental Clinic: Patiens, Appointments, Acconting, Purchases, Inventory, dental store",
+          "Dental Clinic app: Patients, Appointments, Acconting, Purchases, Inventory, dental store",
           "Nutrition app: Patients, Appointments, Diets",
         ],
       },
