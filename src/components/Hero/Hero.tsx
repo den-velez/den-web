@@ -15,6 +15,7 @@ const Hero = () => {
       </div>
       <div className='md:hidden h-[340px] mb-10'>
         <Image
+          className='w-full h-full'
           src={"/backgrounds/bg-heroMobile.png"}
           width={390}
           height={486}
